@@ -1,77 +1,50 @@
-
 html {
-    box-sizing: border-box;
-    min-height:100vh;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Futura,"Trebuchet MS",Arial,sans-serif
+font-size: 10px;
+background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+background-size: cover;
 }
-  *, *:before, *:after {box-sizing: inherit; }
-
-svg {
-    fill:white;
-    background: rgba(0,0,0,0.1);
-    padding: 20px;
-    border-radius: 50%;
-    width:200px;
-    margin-bottom: 50px;
+body,html {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
 }
 
-.wrapper {
-    padding: 20px;
-    max-width: 350px;
-    background: rgba(255,255,255,0.95);
-    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+.keys {
+display: flex;
+flex: 1;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
 }
 
-h2 {
-    text-align: center;
-    margin: 0;
-    font-weight: 200;
+.key {
+border: .4rem solid black;
+border-radius: .5rem;
+margin: 1rem;
+font-size: 1.5rem;
+padding: 1rem .5rem;
+transition: all .07s ease;
+width: 10rem;
+text-align: center;
+color: white;
+background: rgba(0,0,0,0.4);
+text-shadow: 0 0 .5rem black;
 }
 
-.plates {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    list-style: none;
+.playing {
+transform: scale(1.1);
+border-color: violet;
+box-shadow: 0 0 1rem violet;
 }
 
-.plates li {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    padding: 10px 0;
-    font-weight: 100;
-    display: flex;
+kbd {
+display: block;
+font-size: 4rem;
 }
 
-.plates label {
-    flex:1;
-    cursor: pointer;
-}
-
-.plates input {
-    display: none;
-}
-
-.plates input + label:before {
-    content: '⬜️';
-    margin-right: 10px;
-}
-
-.plates input:checked + label:before {
-    content: url(../images/Unicorn.png);
-}
-
-.add-items {
-    margin-top: 20px;
-}
-
-.add-items input {
-    padding:10px;
-    outline:0;
-    border:1px solid rgba(0,0,0,0.1);
-}
-.hidden{
-    display: none;
+.sound {
+font-size: 1.2rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+color: #ffc600;
 }
