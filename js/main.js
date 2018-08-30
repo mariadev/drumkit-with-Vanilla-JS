@@ -36,4 +36,5 @@ function removeTransition (e){
 }
 
 keys.forEach(key => key.addEventListener ('transitionend',removeTransition));
+keys.forEach(key => key.focus());
 window.addEventListener('keydown', playsound);
